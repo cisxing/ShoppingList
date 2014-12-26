@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aitmyhelloapp.examples.android.ait.hu.shoppinglistapplication" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/shopping_cart"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Newly added splash screen activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateItemActivity"
+            android:label="@string/app_name" >
+
+            <!-- I do not know if I still need the intent filter for this activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ShoppingListActivity"
+            android:label="@string/title_activity_shopping_list" >
+        </activity>
+        <activity
+            android:name=".passWordActivity"
+            android:label="@string/title_activity_pass_word" >
+        </activity>
+    </application>
+
+</manifest>
